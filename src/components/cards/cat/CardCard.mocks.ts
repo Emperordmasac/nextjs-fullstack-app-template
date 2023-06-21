@@ -9,6 +9,6 @@ const base: ICatCard = {
   time: '2h ago',
 };
 
-export const mockCarCardProps = {
+export const mockCatCardProps = {
   base,
 };

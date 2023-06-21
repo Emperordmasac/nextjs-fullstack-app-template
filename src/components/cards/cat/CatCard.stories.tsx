@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { mockCarCardProps } from './CardCard.mocks';
+import { mockCatCardProps } from './CardCard.mocks';
 import CatCard, { ICatCard } from './CatCard';
 
 export default {
@@ -20,5 +20,5 @@ export const Base = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 
 Base.args = {
-  ...mockCarCardProps.base,
+  ...mockCatCardProps.base,
 } as ICatCard;
