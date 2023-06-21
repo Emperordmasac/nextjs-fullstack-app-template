@@ -2,8 +2,6 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 
 import PrimaryLayout from '@/components/layouts/primary/PrimaryLayout';
-import SidebarLayout from '@/components/layouts/sidebar/SidebarLayout';
-import { mockSidebarLayoutProps } from '@/components/layouts/sidebar/SidebarLayout.mocks';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -29,10 +27,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <PrimaryLayout>
-          <SidebarLayout {...mockSidebarLayoutProps.base} />
-          {children}
-        </PrimaryLayout>
+        <PrimaryLayout>{children}</PrimaryLayout>
       </body>
     </html>
   );
